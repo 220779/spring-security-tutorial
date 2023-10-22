@@ -1,4 +1,8 @@
 package com.dailycodebuffer.springsecurityclient.service;
 
-public interface UserService<U, L extends Number> {
+import com.dailycodebuffer.springsecurityclient.entity.User;
+import com.dailycodebuffer.springsecurityclient.model.UserModel;
+
+public interface UserService {
+    User registerUser(UserModel userModel);
 }

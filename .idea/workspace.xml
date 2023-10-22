@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd2cd-0692-4c6a-98fa-223173087ff1" name="Changes" comment="[add] initial commit">
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/controller/RegistrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="aa5bd2cd-0692-4c6a-98fa-223173087ff1" name="Changes" comment="[add] creating basic classes">
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/model/UserModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -73,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697965544860</updated>
-      <workItem from="1697965546611" duration="3168000" />
+      <workItem from="1697965546611" duration="5488000" />
     </task>
     <task id="LOCAL-00001" summary="[add] initial commit">
       <created>1697966047650</created>
@@ -103,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697973387690</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[add] creating basic classes">
+      <created>1697974316306</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697974316306</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +132,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[add] initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] initial commit" />
+    <MESSAGE value="[add] creating basic classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] creating basic classes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
