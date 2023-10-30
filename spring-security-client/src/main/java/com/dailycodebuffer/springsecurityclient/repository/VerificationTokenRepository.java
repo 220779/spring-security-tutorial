@@ -1,14 +1,10 @@
 package com.dailycodebuffer.springsecurityclient.repository;
 
 
-
-import com.dailycodebuffer.springsecurityclient.entity.User;
-
+import com.dailycodebuffer.springsecurityclient.entity.VerificationToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
-    //void save();
+public interface VerificationTokenRepository extends JpaRepository <VerificationToken, Long> {
 }

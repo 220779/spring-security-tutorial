@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd2cd-0692-4c6a-98fa-223173087ff1" name="Changes" comment="[add] implementing the registration flow">
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/config/WebSecurityConfig.java" afterDir="false" />
+    <list default="true" id="aa5bd2cd-0692-4c6a-98fa-223173087ff1" name="Changes" comment="[add] User Service implementation (termination of  registration)">
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/entity/VerificationToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/event/RegistrationCompleteEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/event/listener/RegistrationCompleteEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/repository/VerificationTokenRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/controller/RegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,18 +51,23 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5ec1c46c0e99c29ca964a6ce719dcaca&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="SpringSecurityClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-security-client" />
@@ -76,7 +85,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697965544860</updated>
-      <workItem from="1697965546611" duration="8521000" />
+      <workItem from="1697965546611" duration="16702000" />
+      <workItem from="1698672965588" duration="2845000" />
+      <workItem from="1698678724652" duration="408000" />
     </task>
     <task id="LOCAL-00001" summary="[add] initial commit">
       <created>1697966047650</created>
@@ -120,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697980184555</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[add] User Service implementation (termination of  registration)">
+      <created>1697983136229</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697983136230</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +159,8 @@
     <MESSAGE value="[add] initial commit" />
     <MESSAGE value="[add] creating basic classes" />
     <MESSAGE value="[add] implementing the registration flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] implementing the registration flow" />
+    <MESSAGE value="[add] User Service implementation (termination of  registration)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] User Service implementation (termination of  registration)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
