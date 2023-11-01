@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd2cd-0692-4c6a-98fa-223173087ff1" name="Changes" comment="[add] User Service implementation (termination of  registration)">
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/entity/VerificationToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/event/RegistrationCompleteEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/event/listener/RegistrationCompleteEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/repository/VerificationTokenRepository.java" afterDir="false" />
+    <list default="true" id="aa5bd2cd-0692-4c6a-98fa-223173087ff1" name="Changes" comment="[add] Send email to user (click and user can be activated)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/entity/VerificationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/entity/VerificationToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/event/listener/RegistrationCompleteEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/event/listener/RegistrationCompleteEventListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/repository/VerificationTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/repository/VerificationTokenRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" afterDir="false" />
@@ -64,6 +65,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;5ec1c46c0e99c29ca964a6ce719dcaca&quot;
   }
@@ -87,7 +89,13 @@
       <updated>1697965544860</updated>
       <workItem from="1697965546611" duration="16702000" />
       <workItem from="1698672965588" duration="2845000" />
-      <workItem from="1698678724652" duration="408000" />
+      <workItem from="1698678724652" duration="2826000" />
+      <workItem from="1698737205833" duration="3242000" />
+      <workItem from="1698744125756" duration="3020000" />
+      <workItem from="1698759552304" duration="4762000" />
+      <workItem from="1698848987826" duration="945000" />
+      <workItem from="1698850390386" duration="783000" />
+      <workItem from="1698851690181" duration="2975000" />
     </task>
     <task id="LOCAL-00001" summary="[add] initial commit">
       <created>1697966047650</created>
@@ -138,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697983136230</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[add] Send email to user (click and user can be activated)">
+      <created>1698679401528</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698679401528</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +175,8 @@
     <MESSAGE value="[add] creating basic classes" />
     <MESSAGE value="[add] implementing the registration flow" />
     <MESSAGE value="[add] User Service implementation (termination of  registration)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] User Service implementation (termination of  registration)" />
+    <MESSAGE value="[add] Send email to user (click and user can be activated)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] Send email to user (click and user can be activated)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
