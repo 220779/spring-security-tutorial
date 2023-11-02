@@ -29,7 +29,7 @@ public class WebSecurityConfig {
                 .csrf()
                 .disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/hello", "/register","/verifyRegistration").permitAll();
+                .requestMatchers("/hello", "/register","/verifyRegistration", "/resendVerifyToken").permitAll();
 
         return http.build();
     }

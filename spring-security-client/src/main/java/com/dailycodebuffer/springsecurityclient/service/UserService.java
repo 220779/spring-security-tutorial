@@ -1,6 +1,7 @@
 package com.dailycodebuffer.springsecurityclient.service;
 
 import com.dailycodebuffer.springsecurityclient.entity.User;
+import com.dailycodebuffer.springsecurityclient.entity.VerificationToken;
 import com.dailycodebuffer.springsecurityclient.model.UserModel;
 
 public interface UserService {
@@ -9,4 +10,7 @@ public interface UserService {
     void saveVerificationTokenForUser(String token, User user);
 
     String validateVerificationToken(String token);
+
+    VerificationToken generateNewVerificationToken(String oldToken);
 }
+

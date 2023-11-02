@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd2cd-0692-4c6a-98fa-223173087ff1" name="Changes" comment="[add] Send email to user (click and user can be activated)">
+    <list default="true" id="aa5bd2cd-0692-4c6a-98fa-223173087ff1" name="Changes" comment="[add] verifying registration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/entity/VerificationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/entity/VerificationToken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/event/listener/RegistrationCompleteEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/event/listener/RegistrationCompleteEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/repository/VerificationTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/repository/VerificationTokenRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +90,7 @@
       <workItem from="1698759552304" duration="4762000" />
       <workItem from="1698848987826" duration="945000" />
       <workItem from="1698850390386" duration="783000" />
-      <workItem from="1698851690181" duration="2975000" />
+      <workItem from="1698851690181" duration="8500000" />
     </task>
     <task id="LOCAL-00001" summary="[add] initial commit">
       <created>1697966047650</created>
@@ -153,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698679401528</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[add] verifying registration">
+      <created>1698855636462</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698855636463</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +178,8 @@
     <MESSAGE value="[add] implementing the registration flow" />
     <MESSAGE value="[add] User Service implementation (termination of  registration)" />
     <MESSAGE value="[add] Send email to user (click and user can be activated)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] Send email to user (click and user can be activated)" />
+    <MESSAGE value="[add] verifying registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] verifying registration" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
