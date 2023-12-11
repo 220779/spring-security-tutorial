@@ -1,6 +1,6 @@
-package com.dailycodebuffer.springsecurityclient.event;
+package com.dailycodebuffer.client.event;
 
-import com.dailycodebuffer.springsecurityclient.entity.User;
+import com.dailycodebuffer.client.entity.User;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.context.ApplicationEvent;

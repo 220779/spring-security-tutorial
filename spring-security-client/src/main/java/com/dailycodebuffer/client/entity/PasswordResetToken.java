@@ -1,4 +1,4 @@
-package com.dailycodebuffer.springsecurityclient.entity;
+package com.dailycodebuffer.client.entity;
 
 
 import jakarta.persistence.*;

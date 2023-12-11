@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aa5bd2cd-0692-4c6a-98fa-223173087ff1" name="Changes" comment="[add] Reset and Save Password">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/dailycodebuffer/springsecurityclient/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +91,8 @@
       <workItem from="1699174007218" duration="6573000" />
       <workItem from="1699204481683" duration="376000" />
       <workItem from="1699283253018" duration="3664000" />
+      <workItem from="1699293720739" duration="608000" />
+      <workItem from="1699369148016" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="[add] initial commit">
       <created>1697966047650</created>

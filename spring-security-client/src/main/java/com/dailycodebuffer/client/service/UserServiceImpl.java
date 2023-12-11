@@ -1,12 +1,12 @@
-package com.dailycodebuffer.springsecurityclient.service;
+package com.dailycodebuffer.client.service;
 
-import com.dailycodebuffer.springsecurityclient.entity.PasswordResetToken;
-import com.dailycodebuffer.springsecurityclient.entity.User;
-import com.dailycodebuffer.springsecurityclient.entity.VerificationToken;
-import com.dailycodebuffer.springsecurityclient.model.UserModel;
-import com.dailycodebuffer.springsecurityclient.repository.PasswordResetTokenRepository;
-import com.dailycodebuffer.springsecurityclient.repository.UserRepository;
-import com.dailycodebuffer.springsecurityclient.repository.VerificationTokenRepository;
+import com.dailycodebuffer.client.entity.PasswordResetToken;
+import com.dailycodebuffer.client.entity.User;
+import com.dailycodebuffer.client.entity.VerificationToken;
+import com.dailycodebuffer.client.repository.PasswordResetTokenRepository;
+import com.dailycodebuffer.client.repository.UserRepository;
+import com.dailycodebuffer.client.repository.VerificationTokenRepository;
+import com.dailycodebuffer.client.model.UserModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -22,14 +22,14 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
-
     @Autowired
     private VerificationTokenRepository verificationTokenRepository;
 
     @Autowired
-    private PasswordEncoder passwordEncoder;
-    @Autowired
     private PasswordResetTokenRepository passwordResetTokenRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Override
     public User registerUser(UserModel userModel) {
@@ -54,7 +54,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public String validateVerificationToken(String token) {
         VerificationToken verificationToken = verificationTokenRepository.findByToken(token);
-        if (verificationToken == null) {
+        if(verificationToken == null) {
             return "invalid";
         }
         User user = verificationToken.getUser();
@@ -95,7 +95,7 @@ public class UserServiceImpl implements UserService {
         PasswordResetToken passwordResetToken =
                 passwordResetTokenRepository.findByToken(token);
 
-        if (passwordResetToken == null) {
+        if(passwordResetToken==null) {
             return "invalid";
         }
         User user  = passwordResetToken.getUser();

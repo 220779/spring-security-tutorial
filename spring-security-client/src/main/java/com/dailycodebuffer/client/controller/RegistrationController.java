@@ -1,13 +1,13 @@
-package com.dailycodebuffer.springsecurityclient.controller;
+package com.dailycodebuffer.client.controller;
 
-import com.dailycodebuffer.springsecurityclient.entity.User;
-import com.dailycodebuffer.springsecurityclient.entity.VerificationToken;
-import com.dailycodebuffer.springsecurityclient.event.RegistrationCompleteEvent;
-import com.dailycodebuffer.springsecurityclient.model.PasswordModel;
-import com.dailycodebuffer.springsecurityclient.model.UserModel;
-import com.dailycodebuffer.springsecurityclient.repository.PasswordResetTokenRepository;
-import com.dailycodebuffer.springsecurityclient.repository.UserRepository;
-import com.dailycodebuffer.springsecurityclient.service.UserService;
+import com.dailycodebuffer.client.entity.User;
+import com.dailycodebuffer.client.entity.VerificationToken;
+import com.dailycodebuffer.client.event.RegistrationCompleteEvent;
+import com.dailycodebuffer.client.model.PasswordModel;
+import com.dailycodebuffer.client.repository.PasswordResetTokenRepository;
+import com.dailycodebuffer.client.repository.UserRepository;
+import com.dailycodebuffer.client.service.UserService;
+import com.dailycodebuffer.client.model.UserModel;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +20,10 @@ import java.util.UUID;
 @Slf4j
 @RestController
 public class RegistrationController {
+
     @Autowired
     private PasswordResetTokenRepository passwordResetTokenRepository;
+
     @Autowired
     private UserRepository userRepository;
 

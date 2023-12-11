@@ -1,8 +1,8 @@
-package com.dailycodebuffer.springsecurityclient.event.listener;
+package com.dailycodebuffer.client.event.listener;
 
-import com.dailycodebuffer.springsecurityclient.entity.User;
-import com.dailycodebuffer.springsecurityclient.event.RegistrationCompleteEvent;
-import com.dailycodebuffer.springsecurityclient.service.UserService;
+import com.dailycodebuffer.client.event.RegistrationCompleteEvent;
+import com.dailycodebuffer.client.entity.User;
+import com.dailycodebuffer.client.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;

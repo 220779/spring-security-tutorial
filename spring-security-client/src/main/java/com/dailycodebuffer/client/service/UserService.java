@@ -1,10 +1,11 @@
-package com.dailycodebuffer.springsecurityclient.service;
+package com.dailycodebuffer.client.service;
 
-import com.dailycodebuffer.springsecurityclient.entity.User;
-import com.dailycodebuffer.springsecurityclient.entity.VerificationToken;
-import com.dailycodebuffer.springsecurityclient.model.UserModel;
+import com.dailycodebuffer.client.entity.User;
+import com.dailycodebuffer.client.entity.VerificationToken;
+import com.dailycodebuffer.client.model.UserModel;
 
 import java.util.Optional;
+
 
 public interface UserService {
     User registerUser(UserModel userModel);

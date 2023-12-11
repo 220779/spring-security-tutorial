@@ -1,4 +1,4 @@
-package com.dailycodebuffer.springsecurityclient.model;
+package com.dailycodebuffer.client.model;
 
 
 import lombok.Data;
